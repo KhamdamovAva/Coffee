@@ -1,0 +1,117 @@
+.order {
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  gap: 40px;
+  min-height: 500px;
+}
+.form {
+  width: 60%;
+  &__wrapper {
+    width: 100%;
+    min-height: 200px;
+    padding: 40px;
+    border-radius: 6px;
+    background: rgb(243, 242, 242);
+    margin-bottom: 20px;
+  }
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    margin-bottom: 40px;
+  }
+  &__input {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.form__input.error {
+  border-color: red;
+}
+
+
+.error__position {
+  position: relative;
+  bottom: 80px;
+  color: red;
+  font-size: 14px;
+}
+.error__message {
+  position: relative;
+  bottom: 20px;
+  color: red;
+  font-size: 13px;
+}
+.payment {
+  padding: 20px 40px;
+  border-radius: 6px;
+  background: rgb(243, 242, 242);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__inp {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    height: 48px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    border-color: rgb(128, 71, 248);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    &:hover {
+      background: rgb(215, 213, 213);
+    }
+  }
+  &__svg {
+    color: rgb(128, 71, 248);
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"]:checked + div {
+    background: rgb(235, 229, 249);
+    border-color: rgb(128, 71, 248);
+  }
+}
+
+.total {
+  width: 40%;
+  &__main {
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+    background: rgb(243, 242, 242);
+    border-radius: 6px 44px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper__text {
+    margin-bottom: 10px;
+  }
+  .wrapper__btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgb(219, 188, 102);
+    cursor: pointer;
+  }
+}

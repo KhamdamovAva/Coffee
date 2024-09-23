@@ -1,0 +1,112 @@
+.titles {
+    color: rgb(64, 57, 55);
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: 800;
+    line-height: 130%;
+    margin: 30px 0;
+}
+
+.cards {
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 52px 32px;
+    margin-top: 56px;
+}
+
+.card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(243, 242, 242);
+    border-radius: 6px 36px;
+    margin-bottom: 30px;
+    margin-top: 48px;
+    padding: 0 20px 20px;
+
+    &__img {
+        width: 120px;
+        margin-top: -80px;
+    }
+
+    &__span {
+        font-family: sans-serif;
+        color: rgb(196, 127, 23);
+        background-color: rgb(241, 233, 201);
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 16px 0 20px 0;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: rgb(64, 57, 55);
+        margin-bottom: 8px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    &__descr {
+        margin-bottom: 32px;
+        color: rgb(141, 134, 134);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        &-currency {
+            color: rgb(87, 79, 77);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &-valyuta {
+            font-size: 22px;
+            color: rgb(87, 79, 77);
+
+        }
+
+        &-price {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        &-order {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &--number {
+                display: flex;
+                flex: 1 1 0%;
+                background-color: rgb(230, 229, 229);
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                border-radius: 6px;
+                height: 38px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.increment, .decrement, .value{
+    font-size: 18px;
+}
